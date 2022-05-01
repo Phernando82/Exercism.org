@@ -38,6 +38,9 @@ PREPARATION_TIME = 40
 
 
 class Lasagna:
+    """
+    Foi necessário criar a classe Lasagna para poder testar, mas na página Exercism não é necessário
+    """
     def __init__(self, EXPECTED_BAKE_TIME = 40):
         self.EXPECTED_BAKE_TIME = EXPECTED_BAKE_TIME
 
