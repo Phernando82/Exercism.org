@@ -30,6 +30,9 @@ raise ValueError("square must be between 1 and 64")
 >>> square(8)
 128
 
+>>> total()
+18446744073709551615
+
 """
 
 
@@ -38,16 +41,21 @@ raise ValueError("square must be between 1 and 64")
 def square(number):
     res = 1
     if number > 64 or number < 1:
-        raise Exception("square must be between 1 and 64")
-    for i in range(number-1):
+        raise ValueError("square must be between 1 and 64")
+    for i in range(number - 1):
         res = res * 2
 
     return res
 
 
-print(square(8))
-
+print(square(64))
 
 
 def total():
-    pass
+    res = 1
+    for i in range(64):
+        res = res * 2
+
+    return res - 1
+
+print(total())
